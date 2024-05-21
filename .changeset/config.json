@@ -2,13 +2,16 @@
   "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "@tardis-ksh/demo-turborepo" }
+    { "repo": "tardis-ksh/demo-turborepo" }
   ],
-  "commit": true,
+  "commit": false,
   "fixed": [],
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
   "ignore": ["@tardis-ksh/docs"],
-  "baseBranch": "main"
+  "baseBranch": "main",
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+    "updateInternalDependents": "always"
+  }
 }
