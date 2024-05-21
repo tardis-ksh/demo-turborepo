@@ -94,6 +94,24 @@ importers:
         specifier: ^5.3.3
         version: 5.4.5
 
+  packages/acme-hooks:
+    devDependencies:
+      '@tardis-ksh/eslint-config':
+        specifier: workspace:^
+        version: link:../eslint-config
+      '@tardis-ksh/tsconfig':
+        specifier: workspace:^
+        version: link:../acme-tsconfig
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      tsup:
+        specifier: ^8.0.2
+        version: 8.0.2(postcss@8.4.31)(typescript@5.4.5)
+      typescript:
+        specifier: ^5.3.3
+        version: 5.4.5
+
   packages/acme-tsconfig: {}
 
   packages/acme-utils:
