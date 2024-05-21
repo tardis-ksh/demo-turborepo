@@ -1,5 +1,11 @@
 # @tardis-ksh/core
 
+## 1.2.1
+
+### Patch Changes
+
+- d445a69: fix: change text
+
 ## 1.2.0
 
 ### Minor Changes
