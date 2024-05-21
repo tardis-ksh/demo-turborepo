@@ -7,7 +7,7 @@ export interface LinkProps {
 const Link:FC<PropsWithChildren & LinkProps> = (props) => {
   const { children, href } = props;
 
-  return <a href={href}>change text {children}</a>;
+  return <a href={href}>change {children}</a>;
 };
 
 export default Link;
