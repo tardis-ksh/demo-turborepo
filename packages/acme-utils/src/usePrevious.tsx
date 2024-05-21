@@ -4,6 +4,7 @@ function usePrevious<T>(value: T) {
   // The ref object is a generic container whose current property is mutable ...
   // ... and can hold any value, similar to an instance property on a class
   const ref = React.useRef<T>(value);
+  console.log('fix');
 
   // Store current value in ref
   React.useEffect(() => {
