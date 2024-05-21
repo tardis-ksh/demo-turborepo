@@ -1,5 +1,11 @@
 # @tardis-ksh/core
 
+## 1.2.0
+
+### Minor Changes
+
+- 517c63d: change text
+
 ## 1.1.0
 
 ### Minor Changes
