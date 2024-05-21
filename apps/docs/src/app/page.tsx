@@ -1,10 +1,10 @@
-import { Button } from "@acme/core";
+import { Button } from "@tardis-ksh/core";
 
 export default function Page() {
   return (
     <>
       <h1>Web</h1>
-      <Button>Boop</Button>
+      <Button>click-2</Button>
     </>
   );
 }
