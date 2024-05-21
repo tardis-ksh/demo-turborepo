@@ -10,8 +10,5 @@
   "access": "public",
   "updateInternalDependencies": "patch",
   "ignore": ["@tardis-ksh/docs"],
-  "baseBranch": "main",
-  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
-    "updateInternalDependents": "always"
-  }
+  "baseBranch": "main"
 }
