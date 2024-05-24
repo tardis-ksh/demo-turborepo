@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      pnpm-dependencies:
+        patterns:
+          - "@pnpm/lockfile-file"
+          - "@pnpm/dependency-path"
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+    # 排除需要更新的版本
+    ignore:
+      - dependency-name: "npm"
+        update-types: [ "version-update:semver-major" ]

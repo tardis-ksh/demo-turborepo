@@ -3,7 +3,12 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - "main"
+    # 包含下列文件夹才执行，并排除 app/docs 文件的改动
+    paths:
+      - "packages/**"
+      - "apps/**"
+      - "!apps/docs/**"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -19,6 +24,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+          fetch-depth: 0
 
       - name: Cache pnpm cache
         uses: actions/cache@v4
@@ -49,6 +57,8 @@ jobs:
         with:
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: pnpm release
+          commit: 'chore: release packages'
+          title: 'chore: release packages'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -56,4 +66,6 @@ jobs:
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
         # You can do something when a publish happens.
-        run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
+        run: |
+          echo "down"
+#          my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
