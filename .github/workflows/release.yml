@@ -6,6 +6,7 @@ on:
       - "main"
     # 包含下列文件夹才执行，并排除 app/docs 文件的改动
     paths:
+      - ".changeset/**"
       - "packages/**"
       - "apps/**"
       - "!apps/docs/**"
