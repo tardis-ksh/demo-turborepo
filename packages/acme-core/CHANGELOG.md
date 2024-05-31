@@ -1,5 +1,16 @@
 # @tardis-ksh/core
 
+## 1.5.0
+
+### Minor Changes
+
+- [`0f9de90`](https://github.com/tardis-ksh/demo-turborepo/commit/0f9de90addcead8cd901a9e13c0af1737c66f466) Thanks [@Kshao123](https://github.com/Kshao123)! - change release config
+
+### Patch Changes
+
+- Updated dependencies [[`0f9de90`](https://github.com/tardis-ksh/demo-turborepo/commit/0f9de90addcead8cd901a9e13c0af1737c66f466)]:
+  - @tardis-ksh/acme-hooks@0.5.0
+
 ## 1.4.0
 
 ### Minor Changes
