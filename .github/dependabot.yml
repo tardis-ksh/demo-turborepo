@@ -26,5 +26,5 @@ updates:
           - "patch"
     # 排除需要更新的版本
     ignore:
-      - dependency-name: "npm"
+      - dependency-name: "*"
         update-types: [ "version-update:semver-major" ]
