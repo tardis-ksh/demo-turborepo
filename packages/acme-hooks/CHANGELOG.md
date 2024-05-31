@@ -1,5 +1,11 @@
 # @tardis-ksh/acme-hooks
 
+## 0.7.0
+
+### Minor Changes
+
+- [`4a6852d`](https://github.com/tardis-ksh/demo-turborepo/commit/4a6852dd9bed00bfe5388aa5103073ad646160e2) Thanks [@Kshao123](https://github.com/Kshao123)! - change text
+
 ## 0.6.0
 
 ### Minor Changes
