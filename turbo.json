@@ -17,6 +17,16 @@
     },
     "clean": {
       "cache": false
+    },
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
+    "build1": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build1"]
+    },
+    "typeCheck": {
+      "dependsOn": ["topo"]
     }
   }
 }

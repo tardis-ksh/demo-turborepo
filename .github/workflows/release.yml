@@ -19,6 +19,10 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    # To use Turborepo Remote Caching, set the following environment variables for the job.
+    env:
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 #    permissions:
 #      contents: write
 #      pull-requests: write
@@ -40,9 +44,25 @@ jobs:
             ${{ runner.os }}-${{ env.cache-name }}-
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        # use the right version
+        run: corepack enable
+#        uses: pnpm/action-setup@v4
+#        with:
+#          version: 9
+
+      # use pnpm cache. https://github.com/marketplace/actions/setup-pnpm
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
         with:
-          version: 9
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

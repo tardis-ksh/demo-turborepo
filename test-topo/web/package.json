@@ -1,0 +1,26 @@
+{
+  "name": "@test/web",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test1": "echo \"Error: no test specified\" && exit 1",
+    "build1": "tsup index.tsx --format esm,cjs --dts --external react",
+    "typeCheck": "tsc --checkJs --noEmit"
+  },
+  "devDependencies": {
+    "@tardis-ksh/eslint-config": "workspace:^",
+    "@tardis-ksh/tsconfig": "workspace:^",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@test/ui": "workspace:^"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

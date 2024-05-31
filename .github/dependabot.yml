@@ -19,6 +19,11 @@ updates:
         update-types:
           - "minor"
           - "patch"
+      pro-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
     # 排除需要更新的版本
     ignore:
       - dependency-name: "npm"

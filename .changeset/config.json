@@ -9,6 +9,6 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": ["@tardis-ksh/docs"],
+  "ignore": ["@tardis-ksh/docs", "@test/**"],
   "baseBranch": "main"
 }
