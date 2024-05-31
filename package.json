@@ -15,7 +15,7 @@
     "@changesets/cli": "^2.27.3",
     "@tardis-ksh/eslint-config": "workspace:*",
     "@tardis-ksh/tsconfig": "workspace:^",
-    "eslint": "^8.57.0",
+    "eslint": "^9.3.0",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
