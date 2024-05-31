@@ -1,5 +1,5 @@
 const useConsole = () => {
-  console.log('in sue console -2')
+  console.log('in sue console -3')
 }
 
 export default useConsole;
