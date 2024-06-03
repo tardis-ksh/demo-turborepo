@@ -16,7 +16,7 @@
     "@tardis-ksh/eslint-config": "workspace:*",
     "@tardis-ksh/tsconfig": "workspace:^",
     "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.0",
     "turbo": "latest"
   },
   "engines": {
