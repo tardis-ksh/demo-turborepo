@@ -1,5 +1,12 @@
 # @tardis-ksh/core
 
+## 1.6.1
+
+### Patch Changes
+
+- Updated dependencies [[`203dc17`](https://github.com/tardis-ksh/demo-turborepo/commit/203dc17a51f7c2ec59c802a00563d5685cd1b5ad)]:
+  - @tardis-ksh/acme-hooks@0.12.0
+
 ## 1.6.0
 
 ### Minor Changes
