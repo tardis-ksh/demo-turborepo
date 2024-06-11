@@ -1,5 +1,11 @@
 # @tardis-ksh/acme-hooks
 
+## 0.13.0
+
+### Minor Changes
+
+- [`183d449`](https://github.com/tardis-ksh/demo-turborepo/commit/183d449d4faf1205d7b58af9fa7e9605a877155c) Thanks [@Kshao123](https://github.com/Kshao123)! - use turbo v2
+
 ## 0.12.0
 
 ### Minor Changes
