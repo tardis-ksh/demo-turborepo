@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "@tardis-ksh/tsconfig": "workspace:*",
-    "@next/eslint-plugin-next": "^14.1.1",
-    "@types/node": "^20.14.2",
+    "@next/eslint-plugin-next": "^14.2.4",
+    "@types/node": "^20.14.8",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "@tardis-ksh/eslint-config": "workspace:*",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.2"
   }
 }

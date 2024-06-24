@@ -15,7 +15,7 @@
     "@tardis-ksh/eslint-config": "workspace:^",
     "@tardis-ksh/tsconfig": "workspace:^",
     "tsup": "^8.1.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.2"
   },
   "keywords": [],
   "author": "",
