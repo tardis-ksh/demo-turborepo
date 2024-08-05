@@ -14,8 +14,8 @@
   "devDependencies": {
     "@tardis-ksh/eslint-config": "workspace:^",
     "@tardis-ksh/tsconfig": "workspace:^",
-    "tsup": "^8.1.0",
-    "typescript": "^5.3.3"
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
   },
   "keywords": [],
   "author": "",
